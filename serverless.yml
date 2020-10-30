@@ -1,11 +1,11 @@
 ---
-service: serverless-react-boilerplate
+service: ffa-games
 configValidationMode: off
 
 provider:
   name: aws
   runtime: nodejs12.x
-  region: ${opt:region, 'us-east-1'}
+  region: ${opt:region, 'eu-north-1'}
   stage: ${opt:stage, 'dev'}
   memorySize: 512
   timeout: 6

@@ -6,14 +6,6 @@ import manifest from "../../public/manifest.json";
 /** Whether we're running on a local desktop or on AWS Lambda */
 const isLocal = process.env.IS_LOCAL || process.env.IS_OFFLINE;
 
-/**
- * Configuration Options
- *
- * IMPORTANT:
- * The config is injected into the client (browser) and accessible through the {@link useConfig}
- * hook. However, due to this behavior, it is important NOT to expose any sensitive information
- * such as passwords or tokens through the config.
- */
 const config = {
   /** Application Config */
   app: {
