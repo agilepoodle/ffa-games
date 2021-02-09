@@ -29,11 +29,11 @@ class GameIndex extends React.Component<{}, {games: GameTO[]}> {
             <table>
                 <thead>
                     <tr>
-                        <td>Sarja</td>
-                        <td>Kotijoukkue</td>
-                        <td>Vierasjoukkue</td>
-                        <td>Pelipäivä</td>
-                        <td>Linkki pelin lisätietoihin</td>
+                        <th>Sarja</th>
+                        <th>Kotijoukkue</th>
+                        <th>Vierasjoukkue</th>
+                        <th>Pelipäivä</th>
+                        <th>Linkki pelin lisätietoihin</th>
                     </tr>
                 </thead>
                 <tbody>

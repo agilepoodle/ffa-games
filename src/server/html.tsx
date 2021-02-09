@@ -12,7 +12,7 @@ const html = ({ stats, content, config }: { stats: Stats; content: string; confi
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="theme-color" content="${config.app.theme_color}" />
-      <title>${config.app.title}</title>
+      <title>${config.app.short_title}</title>
       <link rel="manifest" href="${config.app.public_url}/manifest.json" />
       <link rel="shortcut icon" href="${config.app.public_url}/favicon.ico" />
       <link rel="stylesheet" href="${config.app.dist_url}/${stats.css}" />
@@ -20,7 +20,7 @@ const html = ({ stats, content, config }: { stats: Stats; content: string; confi
         window.__CONFIG__ = ${JSON.stringify(config)};
       </script>
     </head>
-    <body style="background-color: #e1e2e1;">
+    <body>
       <div id="root">${content}</div>
       <script src="${config.app.dist_url}/${stats.main}"></script>
     </body>

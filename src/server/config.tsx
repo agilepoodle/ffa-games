@@ -8,7 +8,8 @@ const isLocal = process.env.IS_LOCAL || process.env.IS_OFFLINE;
 
 const config = {
   app: {
-    title: manifest.short_name,
+    short_title: manifest.short_name,
+    title: manifest.name,
     theme_color: manifest.theme_color,
     /** URL to our public API Gateway endpoint */
     url: isLocal ? "http://localhost:3000" : String(process.env.APIGATEWAY_URL),

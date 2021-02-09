@@ -1,9 +1,24 @@
+
+/* Pseudo class for color variables */
+:root {
+  --light-green: #DAF7A6;
+  --orange: #FFC300;
+  --orange-red: #FF5733;
+  --wine-red: #C70039;
+  --dark-red: #900C3F;
+  --purple: #581845;
+}
+
+#body {
+  background-color: #fff;
+}
+
 .App {
   text-align: center;
   }
 
 .App-notch {
-  background-color: #c79700;
+  background-color: #fff;
   height: 30px;
 }
 
@@ -13,7 +28,7 @@
 }
 
 .App-header {
-  background-color: #ffc72c;
+  background-color: var(--dark-red);
   height: 60px;
   padding: 30px;
   color: #000;
@@ -22,14 +37,33 @@
 .App-title {
   font-size: 2em;
   color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.title {
+  padding: 15px;
+  color: #fff;
+}
+
+.footer {
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.logo {
+  height: 70px;
+  width: auto;
 }
 
 .Info-container {
   display: flex;
   justify-content: center;
-  background-color: #fffa63;
+  background-color: var(--orange);
   padding: 20px;
   margin: 30px;
+  border-radius: 8px;
 }
 
 .Info-bubble {
@@ -40,4 +74,24 @@
 .Game-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin: 30px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  padding: 10px;
+  background-color: var(--purple);
+  color: #fff;
+}
+
+tr {
+  border-bottom: 1px solid var(--dark-red);
+}
+
+td {
+  padding: 10px;
 }
