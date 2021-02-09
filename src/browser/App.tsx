@@ -27,7 +27,7 @@ export default function App() {
       <div className="footer">
         <span>{copyrightYear}</span>&nbsp;&minus;&nbsp;
         <span><a href="http://www.etelaespoonpallo.fi/" target="blank">Etelä-Espoon Pallo ry</a></span>&nbsp;&minus;&nbsp;
-        <span>Data from by <a href="http://www.palloliitto.fi" target="blank">Palloliitto</a></span>
+        <span>Data from <a href="http://www.palloliitto.fi" target="blank">Palloliitto</a></span>
       </div>
     </div>
   );
