@@ -4,11 +4,11 @@ Simple service to show all games of a football club. Use data scraped by another
 
 ## Lambda scraper
 
-See [Game Scraper(https://github.com/agilepoodle/game-srcaper)]
+See [Game Scraper](https://github.com/agilepoodle/game-srcaper)
 
 ## Based on serverless-react-boilerplate
 
-See [serverless-react-boilerplate(https://github.com/arabold/serverless-react-boilerplate)]
+See [serverless-react-boilerplate](https://github.com/arabold/serverless-react-boilerplate)
 
 [![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
 
