@@ -5,7 +5,8 @@ import { Config } from "../../server/config";
 
 const ConfigContext = React.createContext<Config>({
   app: {
-    title: `${manifest.short_name} Mock`,
+    short_title: `${manifest.short_name} Mock`,
+    title: `${manifest.name} Mock`,
     theme_color: manifest.theme_color,
     url: "http://localhost:3000",
     dist_url: "http://localhost:8080",
