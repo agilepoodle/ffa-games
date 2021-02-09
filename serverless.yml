@@ -6,6 +6,7 @@ provider:
   name: aws
   runtime: nodejs12.x
   region: ${opt:region, 'eu-north-1'}
+  profile: ffa-scraper-client
   stage: ${opt:stage, 'dev'}
   memorySize: 512
   timeout: 6

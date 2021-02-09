@@ -1,32 +1,43 @@
 .App {
   text-align: center;
+  }
+
+.App-notch {
+  background-color: #c79700;
+  height: 30px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.App-header-container {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+  background-color: #ffc72c;
+  height: 60px;
+  padding: 30px;
+  color: #000;
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 2em;
+  color: #000;
 }
 
-.App-intro {
-  font-size: large;
+.Info-container {
+  display: flex;
+  justify-content: center;
+  background-color: #fffa63;
+  padding: 20px;
+  margin: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Info-bubble {
+  color: #000;
+  font-size: 1,5em;
+}
+
+.Game-container {
+  display: flex;
+  flex-direction: column;
 }

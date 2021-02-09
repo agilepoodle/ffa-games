@@ -1,24 +1,24 @@
-import "./App.css";
-
 import React from "react";
-
+import "./App.css";
 import useConfig from "../components/useConfig";
-import logo from "./logo.svg";
+import GameIndex from "./GameIndex";
 
-/**
- * Our Web Application
- */
 export default function App() {
   const config = useConfig();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1 className="App-title">Welcome to {config.app.TITLE}</h1>
+      <div className="App-notch">&nbsp;</div>
+      <header className="App-header App-header-container">
+        <div className="App-title">{config.app.title}</div>
       </header>
-      <p className="App-intro">
-        To get started, edit <code>src/browser/App.jsx</code> and save to reload.
-      </p>
+      <div className="Info-container">
+        <span>Seuraavat pelit, joita <a href="https://www.etelaespoonpallo.fi/">EsPan</a> joukkueet pelaavat. 
+        The games in near future where <a href="https://www.etelaespoonpallo.fi/">EsPa</a> teams play.</span>
+      </div>
+      <div className="Game-container">
+        <span>games here</span>
+        <GameIndex />
+      </div>
     </div>
   );
 }

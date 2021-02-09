@@ -12,7 +12,7 @@ const babelOptions = {
       "@babel/preset-env",
       {
         targets: { browsers: ["last 2 versions"] },
-        // debug: isOffline,
+        debug: isOffline,
       },
     ],
     "@babel/preset-typescript",
@@ -27,6 +27,7 @@ module.exports = {
   target: "web",
   mode: isOffline ? "development" : "production",
   devServer: {
+    historyApiFallback: true,
     contentBase: path.join(__dirname, "public"),
     headers: {
       "Access-Control-Allow-Origin": "*",
