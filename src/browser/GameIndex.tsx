@@ -10,9 +10,17 @@ class GameIndex extends React.Component<{}, {games: GameTO[]}> {
         this.state = { games: [] };
     }
     async componentDidMount() {
-        const response = await Api.fetchGames();
-        const json = await response.json();
-        this.setState({ games: this.mapJsonToGames(json) });
+        try {
+            const response = await Api.fetchGames();
+            if (!response.ok) {
+                throw Error(response.statusText);
+            }
+            const json = await response.json();
+            this.setState({ games: this.mapJsonToGames(json) });
+            console.log('Component DID mount')
+        } catch (error) {
+            console.log('Failed to fetch game information', error)
+        }
     }
 
     mapJsonToGames = (json: string) => {
