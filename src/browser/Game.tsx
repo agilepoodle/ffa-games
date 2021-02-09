@@ -12,7 +12,7 @@ const Game = (props: Props) => {
             <td>{props.game.homeTeam}</td>
             <td>{props.game.awayTeam}</td>
             <td>{props.game.matchTime}</td>
-            <td><a href={props.game.link}>Lisätiedot</a></td>
+            <td><a href={props.game.link} target="blank">Lisätiedot</a></td>
         </tr>
     );
 };
