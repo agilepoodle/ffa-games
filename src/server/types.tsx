@@ -6,10 +6,10 @@ export type Stats = {
 };
 
 export type GameTO = {
-  league: String;
-  homeTeam: String;
-  awayTeam: String;
-  matchTime: String;
-  timestamp: String;
-  link: String;
+  league: string;
+  homeTeam: string;
+  awayTeam: string;
+  matchTime: string;
+  timestamp: string;
+  link: string;
 };

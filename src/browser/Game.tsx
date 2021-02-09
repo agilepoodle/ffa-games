@@ -1,11 +1,19 @@
 import React from "react";
+import { GameTO } from "../server/types";
 
-const Game = (props: any) => {
+interface Props {
+    game: GameTO;
+} 
 
+const Game = (props: Props) => {
     return (
-        <div>
-            <pre>{props.game}</pre>
-        </div>
+        <tr>
+            <td>{props.game.league}</td>
+            <td>{props.game.homeTeam}</td>
+            <td>{props.game.awayTeam}</td>
+            <td>{props.game.matchTime}</td>
+            <td><a href={props.game.link}>Lisätiedot</a></td>
+        </tr>
     );
 };
 

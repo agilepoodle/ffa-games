@@ -16,24 +16,30 @@ class GameIndex extends React.Component<{}, {games: GameTO[]}> {
                 throw Error(response.statusText);
             }
             const json = await response.json();
-            this.setState({ games: this.mapJsonToGames(json) });
-            console.log('Component DID mount')
+            console.log('games', json)
+            this.setState({ games: json });
         } catch (error) {
             console.log('Failed to fetch game information', error)
         }
     }
 
-    mapJsonToGames = (json: string) => {
-        const games: GameTO[] = JSON.parse(json);
-        console.log('gameTO\'s', games)
-        return games;
-    };
-
     render() {
+        const games = this.state.games.map((g: GameTO) => <Game game={g} key={g.timestamp}/>);
         return (
-            <div>
-                {this.state.games.map((g: any) => (<Game game={g} />))}
-            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Sarja</td>
+                        <td>Kotijoukkue</td>
+                        <td>Vierasjoukkue</td>
+                        <td>Pelipäivä</td>
+                        <td>Linkki pelin lisätietoihin</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    {games}
+                </tbody>
+            </table>
         );
     };
 }

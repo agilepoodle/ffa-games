@@ -12,11 +12,9 @@ export default function App() {
         <div className="App-title">{config.app.title}</div>
       </header>
       <div className="Info-container">
-        <span>Seuraavat pelit, joita <a href="https://www.etelaespoonpallo.fi/">EsPan</a> joukkueet pelaavat. 
-        The games in near future where <a href="https://www.etelaespoonpallo.fi/">EsPa</a> teams play.</span>
+        <span>Seuraavat pelit, joita <a href="https://www.etelaespoonpallo.fi/">EsPan</a> joukkueet pelaavat.</span>
       </div>
       <div className="Game-container">
-        <span>games here</span>
         <GameIndex />
       </div>
     </div>
